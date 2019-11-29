@@ -1,0 +1,16 @@
+.appTitle {
+  font-size: 1.7em;
+}
+
+.appNav {
+  padding: 5px;
+}
+
+.appList {
+  padding: 0;
+}
+
+.appItem {
+  display: inline-block;
+  margin: 0 10px;
+}

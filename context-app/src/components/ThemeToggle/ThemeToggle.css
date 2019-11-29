@@ -1,0 +1,9 @@
+.clickMe {
+  background: blue;
+  color: white;
+  font-size: 1em;
+  width: 100px;
+  height: 30px;
+  margin: 10px auto;
+  display: block;
+}
