@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import uuid from "uuid/v1";
 
 import "./SongList.css";
@@ -18,6 +18,10 @@ const SongList = () => {
   const addSong = title => {
     setSongs([...songs, { title, id: uuid() }]);
   };
+
+  useEffect(() => {
+    console.log("The list of songs changed...");
+  }, [songs]);
 
   return (
     <section className="songList">
