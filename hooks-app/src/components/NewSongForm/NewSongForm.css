@@ -1,0 +1,24 @@
+.songForm {
+  margin-top: 30px;
+}
+
+.songLabel {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.songInput {
+  padding: 5px;
+  margin: 0 10px;
+  width: 200px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+}
+
+.songButton {
+  padding: 5px 10px;
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+}

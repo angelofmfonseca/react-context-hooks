@@ -5,7 +5,7 @@ import SongList from "./components/SongList/SongList";
 
 const App = () => {
   return (
-    <section className="App">
+    <section className="App ">
       <SongList />
     </section>
   );
