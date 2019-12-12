@@ -2,7 +2,7 @@ import React from "react";
 
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
-import Avangers from "./components/Avangers/Avangers";
+import Musician from "./components/Musician/Musician";
 import ThemeToggle from "./components/ThemeToggle/ThemeToggle";
 import ThemeContextProvider from "./contexts/ThemeContext";
 import AuthContextProvider from "./contexts/AuthContext";
@@ -14,7 +14,7 @@ const App = () => {
       <ThemeContextProvider>
         <AuthContextProvider>
           <Navbar />
-          <Avangers />
+          <Musician />
           <ThemeToggle />
           <AuthToggle />
         </AuthContextProvider>
