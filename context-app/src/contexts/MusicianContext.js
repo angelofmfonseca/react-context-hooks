@@ -12,7 +12,7 @@ const MusicianContextProvider = props => {
     { artist: "Incubus", id: 6 }
   ];
 
-  const [musics, setMusics] = useState(artist);
+  const [musics] = useState(artist);
 
   return (
     <MusicianContext.Provider value={{ musics }}>
