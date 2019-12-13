@@ -1,14 +1,14 @@
-.bookList {
+.musicList {
   padding: 20px;
   margin-bottom: 20px;
 }
 
-.bookListList {
+.musicListList {
   padding: 0;
   list-style-type: none;
 }
 
-.bookListItem {
+.musicListItem {
   padding: 10px;
   margin: 10px auto;
   border-radius: 10px;

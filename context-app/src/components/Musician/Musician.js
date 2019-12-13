@@ -2,29 +2,31 @@ import React, { useContext } from "react";
 
 import "./Musician.css";
 import { ThemeContext } from "../../contexts/ThemeContext";
+import { MusicianContext } from "../../contexts/MusicianContext";
 
 const Musician = () => {
   const { isLightTheme, light, dark } = useContext(ThemeContext);
   const theme = isLightTheme ? light : dark;
 
+  const { musics } = useContext(MusicianContext);
+
   return (
     <section
-      className="bookList"
+      className="musicList"
       style={{ background: theme.bg, color: theme.text }}
     >
-      <ul className="bookListList">
-        <li className="bookListItem" style={{ background: theme.ui }}>
-          Imagine Dragons
-        </li>
-        <li className="bookListItem" style={{ background: theme.ui }}>
-          Pearl Jam
-        </li>
-        <li className="bookListItem" style={{ background: theme.ui }}>
-          Incubus
-        </li>
-        <li className="bookListItem" style={{ background: theme.ui }}>
-          Alter Bridge
-        </li>
+      <ul className="musicListList">
+        {musics.map(music => {
+          return (
+            <li
+              key={music.id}
+              className="musicListItem"
+              style={{ background: theme.ui }}
+            >
+              {music.artist}
+            </li>
+          );
+        })}
       </ul>
     </section>
   );

@@ -7,6 +7,7 @@ import ThemeToggle from "./components/ThemeToggle/ThemeToggle";
 import ThemeContextProvider from "./contexts/ThemeContext";
 import AuthContextProvider from "./contexts/AuthContext";
 import AuthToggle from "./components/AuthToggle/AuthToggle";
+import MusicianContextProvider from "./contexts/MusicianContext";
 
 const App = () => {
   return (
@@ -14,7 +15,9 @@ const App = () => {
       <ThemeContextProvider>
         <AuthContextProvider>
           <Navbar />
-          <Musician />
+          <MusicianContextProvider>
+            <Musician />
+          </MusicianContextProvider>
           <ThemeToggle />
           <AuthToggle />
         </AuthContextProvider>
